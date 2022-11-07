@@ -9,6 +9,7 @@ from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split, cross_val_score
+import matplotlib.pyplot as plt
 import numpy as np
 from pprint import pprint
 
@@ -19,12 +20,17 @@ TRAINED_NETWORK_PATH = 'saved_metrics/lightning_logs/version_0/checkpoints/epoch
 DEPTH_MODEL_PATH = 'depth_model.pkl'
 
 
-def train_depth_classifier():
+def load_data():
     with open(FEATURES_PATH, 'rb') as file:
         X = torch.load(file).numpy()
     with open(LABELS_PATH, 'rb') as file:
         y = torch.load(file).numpy()
 
+    return X, y
+
+
+def train_depth_classifier():
+    X, y = load_data()
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
     candidate_models = {'decision_tree': tree.DecisionTreeClassifier,
@@ -35,7 +41,13 @@ def train_depth_classifier():
 
     scores = {'mean': dict(), 'std': dict()}
     for name, clf_func in candidate_models.items():
-        scores_array = cross_val_score(clf_func(), X_train, y_train, cv=5)
+        if name == 'MLP':
+            scalar = StandardScaler()
+            scalar.fit(X_train)
+            new_X = scalar.transform(X_train)
+            scores_array = cross_val_score(clf_func(), new_X, y_train, cv=5)
+        else:
+            scores_array = cross_val_score(clf_func(), X_train, y_train, cv=5)
         scores['mean'][name] = scores_array.mean()
         scores['std'][name] = scores_array.std()
 
@@ -56,3 +68,38 @@ def train_depth_classifier():
     joblib.dump(clf, DEPTH_MODEL_PATH)
     print(f"saved trained model to path:\t{DEPTH_MODEL_PATH}")
     # joblib.load(DEPTH_MODEL_PATH)
+
+
+def analyze_centrality_measures(experiment_type: str):
+    X,y = load_data()
+    if experiment_type == 'decision_tree':
+        clf = tree.DecisionTreeClassifier()
+        clf.fit(X, y)
+        tree.plot_tree(clf)
+        plt.show()
+    elif experiment_type == 'MLP_sharpe':
+        """
+        use sharpe metric to evaluate contribution features to a trained NN
+        """
+        pass
+    elif experiment_type == 'univariate selection':
+        """
+        use the chi-squared statistical test metric to plot a score bar graph
+        """
+        pass
+    elif experiment_type == 'feature importance':
+        """
+        use the in-built feature importance function of trees in sklearn
+        """
+        pass
+    elif experiment_type == 'correlation heatmap':
+        """
+        plot a heatmap with correlations between variables and the label
+        """
+        pass
+    else:
+        raise ValueError(f"illegal clf_type {experiment_type}")
+
+
+if __name__ == '__main__':
+    analyze_centrality_measures('decision_tree')

@@ -110,27 +110,6 @@ def create_data(network: OurGNN, batch_size, neighbor_limit, data_path, cent_pat
         torch.save(Y, file)
 
 
-# def train_depth_regressor():
-#     from sklearn import tree
-#     import numpy as np
-#
-#     with open(FEATURES_PATH, 'rb') as file:
-#         X = torch.load(file).numpy()
-#     with open(LABELS_PATH, 'rb') as file:
-#         y = torch.load(file).numpy()
-#
-#     clf = tree.DecisionTreeClassifier()
-#     t0 = time.perf_counter()
-#     clf.fit(X, y)
-#     t1 = time.perf_counter()
-#     print(f"time to fit DecisionTreeClassifier: {t1 - t0}")
-#     score = clf.score(X, y)
-#     print(f"training score: {score}")
-#     joblib.dump(clf, DEPTH_MODEL_PATH)
-#     print(f"saved trained model to path:\t{DEPTH_MODEL_PATH}")
-#     # joblib.load(DEPTH_MODEL_PATH)
-
-
 def main():
     max_depth = None
     batch_size = 1024
