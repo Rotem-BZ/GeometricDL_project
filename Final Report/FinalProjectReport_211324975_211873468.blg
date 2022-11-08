@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: FinalProjectReport_211324975_211873468.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+The style file: acl_natbib.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: references.bib
+Warning--entry type for "towardsdatascience" isn't style-file defined
+--line 139 of file references.bib
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Warning--to sort, need author or key in towardsdatascience
+Warning--empty year in towardsdatascience
+Warning--can't use both volume and number fields in gori2005new
+You've used 10 entries,
+            3571 wiz_defined-function locations,
+            746 strings with 7531 characters,
+and the built_in function-call counts, 7526 in all, are:
+= -- 621
+> -- 412
+< -- 5
++ -- 134
+- -- 120
+* -- 524
+:= -- 1127
+add.period$ -- 38
+call.type$ -- 10
+change.case$ -- 96
+chr.to.int$ -- 10
+cite$ -- 15
+duplicate$ -- 494
+empty$ -- 518
+format.name$ -- 151
+if$ -- 1616
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 104
+newline$ -- 53
+num.names$ -- 36
+pop$ -- 243
+preamble$ -- 1
+purify$ -- 80
+quote$ -- 0
+skip$ -- 335
+stack$ -- 0
+substring$ -- 281
+swap$ -- 240
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 90
+warning$ -- 3
+while$ -- 39
+width$ -- 0
+write$ -- 125
+(There were 4 warnings)

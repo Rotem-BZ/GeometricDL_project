@@ -1,0 +1,69 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{tow()}]{towardsdatascience}
+
+\newblock \href
+  {https://towardsdatascience.com/do-we-need-deep-graph-neural-networks-be62d3ec5c59}
+  {Do we need deep graph neural networks?}
+
+\bibitem[{Alon and Yahav(2020)}]{alon2020bottleneck}
+Uri Alon and Eran Yahav. 2020.
+\newblock On the bottleneck of graph neural networks and its practical
+  implications.
+\newblock \emph{arXiv preprint arXiv:2006.05205}.
+
+\bibitem[{Gori et~al.(2005)Gori, Monfardini, and Scarselli}]{gori2005new}
+Marco Gori, Gabriele Monfardini, and Franco Scarselli. 2005.
+\newblock A new model for learning in graph domains.
+\newblock In \emph{Proceedings. 2005 IEEE international joint conference on
+  neural networks}, volume~2, pages 729--734.
+
+\bibitem[{Hu et~al.(2020)Hu, Fey, Zitnik, Dong, Ren, Liu, Catasta, and
+  Leskovec}]{hu2020open}
+Weihua Hu, Matthias Fey, Marinka Zitnik, Yuxiao Dong, Hongyu Ren, Bowen Liu,
+  Michele Catasta, and Jure Leskovec. 2020.
+\newblock Open graph benchmark: Datasets for machine learning on graphs.
+\newblock \emph{Advances in neural information processing systems},
+  33:22118--22133.
+
+\bibitem[{Li et~al.(2019)Li, Muller, Thabet, and Ghanem}]{li2019deepgcns}
+Guohao Li, Matthias Muller, Ali Thabet, and Bernard Ghanem. 2019.
+\newblock Deepgcns: Can gcns go as deep as cnns?
+\newblock In \emph{Proceedings of the IEEE/CVF international conference on
+  computer vision}, pages 9267--9276.
+
+\bibitem[{Li et~al.(2018)Li, Han, and Wu}]{li2018deeper}
+Qimai Li, Zhichao Han, and Xiao-Ming Wu. 2018.
+\newblock Deeper insights into graph convolutional networks for semi-supervised
+  learning.
+\newblock In \emph{Thirty-Second AAAI conference on artificial intelligence}.
+
+\bibitem[{Oono and Suzuki(2019)}]{oono2019graph}
+Kenta Oono and Taiji Suzuki. 2019.
+\newblock Graph neural networks exponentially lose expressive power for node
+  classification.
+\newblock \emph{arXiv preprint arXiv:1905.10947}.
+
+\bibitem[{Rong et~al.(2019)Rong, Huang, Xu, and Huang}]{rong2019dropedge}
+Yu~Rong, Wenbing Huang, Tingyang Xu, and Junzhou Huang. 2019.
+\newblock Dropedge: Towards deep graph convolutional networks on node
+  classification.
+\newblock \emph{arXiv preprint arXiv:1907.10903}.
+
+\bibitem[{Scarselli et~al.(2008)Scarselli, Gori, Tsoi, Hagenbuchner, and
+  Monfardini}]{scarselli2008graph}
+Franco Scarselli, Marco Gori, Ah~Chung Tsoi, Markus Hagenbuchner, and Gabriele
+  Monfardini. 2008.
+\newblock The graph neural network model.
+\newblock \emph{IEEE transactions on neural networks}, 20(1):61--80.
+
+\bibitem[{Zeng et~al.(2021)Zeng, Zhang, Xia, Srivastava, Malevich, Kannan,
+  Prasanna, Jin, and Chen}]{zeng2021decoupling}
+Hanqing Zeng, Muhan Zhang, Yinglong Xia, Ajitesh Srivastava, Andrey Malevich,
+  Rajgopal Kannan, Viktor Prasanna, Long Jin, and Ren Chen. 2021.
+\newblock Decoupling the depth and scope of graph neural networks.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  34:19665--19679.
+
+\end{thebibliography}

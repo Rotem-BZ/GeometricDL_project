@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: acl2021.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+The style file: acl_natbib.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: references.bib
+Warning--entry type for "Prolific" isn't style-file defined
+--line 58 of file references.bib
+Warning--entry type for "wikipedia" isn't style-file defined
+--line 62 of file references.bib
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Warning--to sort, need author or key in wikipedia
+Warning--to sort, need author or key in Prolific
+Warning--empty year in Prolific
+Warning--empty year in wikipedia
+You've used 7 entries,
+            3571 wiz_defined-function locations,
+            739 strings with 7025 characters,
+and the built_in function-call counts, 5023 in all, are:
+= -- 401
+> -- 282
+< -- 2
++ -- 95
+- -- 84
+* -- 372
+:= -- 767
+add.period$ -- 24
+call.type$ -- 7
+change.case$ -- 65
+chr.to.int$ -- 7
+cite$ -- 15
+duplicate$ -- 314
+empty$ -- 348
+format.name$ -- 101
+if$ -- 1078
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 66
+newline$ -- 36
+num.names$ -- 20
+pop$ -- 154
+preamble$ -- 1
+purify$ -- 56
+quote$ -- 0
+skip$ -- 213
+stack$ -- 0
+substring$ -- 181
+swap$ -- 160
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 63
+warning$ -- 4
+while$ -- 22
+width$ -- 0
+write$ -- 82
+(There were 6 warnings)

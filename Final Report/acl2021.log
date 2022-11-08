@@ -1,0 +1,690 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2022.4.2)  30 JUN 2022 23:22
+entering extended mode
+**./acl2021.tex
+(acl2021.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> xparse <2020-03-03>
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size11.clo
+File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(acl2021.sty
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.s
+ty
+Package: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.s
+ty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdftexcmds\pdftex
+cmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infware
+rr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetke
+ys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kvde
+finekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape\pdfesca
+pe.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro\letltxm
+acro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoptions
+.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen139
+\Hy@linkcounter=\count187
+\Hy@pagecounter=\count188
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2021-02-10 v7.00j Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref-l
+angpatches.def
+File: hyperref-langpatches.def 2021-02-10 v7.00j Hyperref: patches for babel la
+nguages
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\intcalc.s
+ty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmds\etexcmds
+.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count189
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-02-10 v7.00j Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count190
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen140
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcalc\bigint
+calc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count191
+\Field@Width=\dimen141
+\Fld@charsize=\dimen142
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\atbegshi-ltx.s
+ty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count192
+\c@Item=\count193
+\c@Hfootnote=\count194
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.de
+f
+File: hpdftex.def 2021-02-10 v7.00j Hyperref driver for pdfTeX
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\atveryend-ltx.
+sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count195
+\c@bookmark@seq@number=\count196
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\reru
+nfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecounter\uni
+quecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip49
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\color.
+cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdftex
+.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 106.
+
+Conference Style for ACL-IJCNLP 2021
+\titlebox=\skip50
+\aclrulerbox=\box47
+\aclrulercount=\count197
+\aclruleroffset=\dimen143
+\cv@lineheight=\dimen144
+\cv@boxheight=\dimen145
+\cv@tmpbox=\box48
+\cv@refno=\count198
+\cv@tot=\count199
+\cv@tmpc@=\count266
+\cv@tmpc=\count267
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.st
+y
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen146
+\captionmargin@=\dimen147
+\captionwidth=\dimen148
+\caption@tempdima=\dimen149
+\caption@indent=\dimen150
+\caption@parindent=\dimen151
+\caption@hangindent=\dimen152
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count268
+\c@continuedfloat=\count269
+Package caption Info: hyperref package is loaded.
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count270
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.s
+ty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count271
+))
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype
+.sty
+Package: microtype 2020/12/07 v2.8 Micro-typographical refinements (RS)
+\MT@toks=\toks16
+\MT@count=\count272
+LaTeX Info: Redefining \textls on input line 788.
+\MT@outer@kern=\dimen153
+LaTeX Info: Redefining \textmicrotypecontext on input line 1358.
+\MT@listname@count=\count273
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype
+-pdftex.def
+File: microtype-pdftex.def 2020/12/07 v2.8 Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip53
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\microtype
+.cfg
+File: microtype.cfg 2020/12/07 v2.8 microtype main configuration file (RS)
+))
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorith
+m.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count274
+\float@exts=\toks17
+\float@box=\box49
+\@float@everytoks=\toks18
+\@floatcapt=\box50
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks19
+\c@algorithm=\count275
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip54
+For additional information on amsmath, use the `?' option.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen154
+))
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen155
+) (C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.st
+y
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count276
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count277
+\leftroot@=\count278
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count279
+\DOTSCASE@=\count280
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen156
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count281
+\c@MaxMatrixCols=\count282
+\dotsspace@=\muskip17
+\c@parentequation=\count283
+\dspbrk@lvl=\count284
+\tag@help=\toks21
+\row@=\count285
+\column@=\count286
+\maxfields@=\count287
+\andhelp@=\toks22
+\eqnshift@=\dimen157
+\alignsep@=\dimen158
+\tagshift@=\dimen159
+\tagwidth@=\dimen160
+\totwidth@=\dimen161
+\lineht@=\dimen162
+\@envbody=\toks23
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithmicx\algpse
+udocode.sty
+Package: algpseudocode 
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithmicx\algori
+thmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count288
+\c@ALG@rem=\count289
+\c@ALG@nested=\count290
+\ALG@tlm=\skip57
+\ALG@thistlm=\skip58
+\c@ALG@Lnr=\count291
+\c@ALG@blocknr=\count292
+\c@ALG@storecount=\count293
+\c@ALG@tmpcounter=\count294
+\ALG@tmplength=\skip59
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.s
+ty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.s
+ty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graphi
+cs.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+7.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend
+-pdftex.def
+File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count295
+\l__pdf_internal_box=\box53
+) (acl2021.aux)
+\openout1 = `acl2021.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+Package hyperref Info: Link coloring ON on input line 37.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.st
+y
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount.s
+ty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\ge
+ttitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count296
+)
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
+ (acl2021.out) (acl2021.out)
+\@outlinefile=\write3
+\openout3 = `acl2021.out'.
+
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pd
+f.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count297
+\scratchdimen=\dimen165
+\scratchbox=\box54
+\nofMPsegments=\count298
+\nofMParguments=\count299
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count300
+\MPscratchDim=\dimen166
+\MPnumerator=\count301
+\makeMPintoPDFobject=\count302
+\everyMPtoPDFconversion=\toks26
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstop
+df-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+) ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 37.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 37.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-ptm.cf
+g
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
+)
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-cmr.cf
+g
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 39
+.
+ (C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 3
+9.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
+5.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+[1{C:/Users/matan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+
+] [2]
+[3]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+92.
+
+(C:\Users\matan\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pcr' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+[4]
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 235.
+ [5] [6]
+<images/f1q5.png, id=119, 433.62pt x 144.54pt>
+File: images/f1q5.png Graphic file (type png)
+<use images/f1q5.png>
+Package pdftex.def Info: images/f1q5.png  used on input line 262.
+(pdftex.def)             Requested size: 219.08612pt x 73.0285pt.
+
+Overfull \hbox (6.66728pt too wide) in paragraph at lines 270--276
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 304--305
+[][]\OT1/pcr/m/n/10.95 ranked_forward []\OT1/ptm/m/n/10.95 (+20) op-er-a-tion, 
+[][]\OT1/pcr/m/n/10.95 forward
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 305--306
+[]\OT1/ptm/m/n/10.95 (+20) We set penalty/reward val-ues as hyper-
+ []
+
+
+Underfull \hbox (badness 4543) in paragraph at lines 354--355
+\OT1/ptm/m/n/10.95 (+20) Dataset. We ran this func-tion on 7 In-
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 354--355
+\OT1/ptm/m/n/10.95 (+20) cpu cores in about  3 hours. The func-tion
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 354--355
+[][]\OT1/pcr/m/n/10.95 calculate_results_prolific []\OT1/ptm/m/n/10.95 (+20) do
+es the
+ []
+
+[7 <./images/f1q5.png>] [8]
+<images/results/Divya_sender_type.png, id=148, 1505.625pt x 803.0pt>
+File: images/results/Divya_sender_type.png Graphic file (type png)
+<use images/results/Divya_sender_type.png>
+Package pdftex.def Info: images/results/Divya_sender_type.png  used on input li
+ne 370.
+(pdftex.def)             Requested size: 219.08612pt x 116.84248pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/results/Divya_sender_embedding.png, id=149, 1505.625pt x 803.0pt>
+File: images/results/Divya_sender_embedding.png Graphic file (type png)
+<use images/results/Divya_sender_embedding.png>
+Package pdftex.def Info: images/results/Divya_sender_embedding.png  used on inp
+ut line 377.
+(pdftex.def)             Requested size: 219.08612pt x 116.84248pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/results/Divya_receiver_type.png, id=150, 1505.625pt x 803.0pt>
+File: images/results/Divya_receiver_type.png Graphic file (type png)
+<use images/results/Divya_receiver_type.png>
+Package pdftex.def Info: images/results/Divya_receiver_type.png  used on input 
+line 383.
+(pdftex.def)             Requested size: 219.08612pt x 116.84248pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/results/Divya_receiver_embedding.png, id=151, 1505.625pt x 803.0pt>
+File: images/results/Divya_receiver_embedding.png Graphic file (type png)
+<use images/results/Divya_receiver_embedding.png>
+Package pdftex.def Info: images/results/Divya_receiver_embedding.png  used on i
+nput line 389.
+(pdftex.def)             Requested size: 219.08612pt x 116.84248pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/results/prolific_sender_type.png, id=158, 1505.625pt x 803.0pt>
+File: images/results/prolific_sender_type.png Graphic file (type png)
+<use images/results/prolific_sender_type.png>
+Package pdftex.def Info: images/results/prolific_sender_type.png  used on input
+ line 401.
+(pdftex.def)             Requested size: 219.08612pt x 116.84248pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/results/prolific_sender_embedding.png, id=159, 1505.625pt x 803.0pt>
+File: images/results/prolific_sender_embedding.png Graphic file (type png)
+<use images/results/prolific_sender_embedding.png>
+Package pdftex.def Info: images/results/prolific_sender_embedding.png  used on 
+input line 407.
+(pdftex.def)             Requested size: 219.08612pt x 116.84248pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/results/prolific_receiver.png, id=160, 1505.625pt x 803.0pt>
+File: images/results/prolific_receiver.png Graphic file (type png)
+<use images/results/prolific_receiver.png>
+Package pdftex.def Info: images/results/prolific_receiver.png  used on input li
+ne 413.
+(pdftex.def)             Requested size: 219.08612pt x 116.84248pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./images/results/Divya_sender_type.png (PNG copy)> <./images/results/Divya
+_sender_embedding.png (PNG copy)>] (acl2021.bbl [10 <./images/results/Divya_rec
+eiver_type.png (PNG copy)> <./images/results/Divya_receiver_embedding.png (PNG 
+copy)> <./images/results/prolific_sender_type.png (PNG copy)> <./images/results
+/prolific_sender_embedding.png (PNG copy)>]) [11
+
+ <./images/results/prolific_receiver.png (PNG copy)>] (acl2021.aux)
+Package rerunfilecheck Info: File `acl2021.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ )
+(\end occurred when \ifx on line 3 was incomplete) 
+Here is how much of TeX's memory you used:
+ 13608 strings out of 479300
+ 211083 string characters out of 2853553
+ 556586 words of memory out of 3000000
+ 30554 multiletter control sequences out of 15000+200000
+ 436968 words of font info for 230 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 86i,19n,88p,1167b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/matan/AppData/Local
+/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/matan/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/matan/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Users/matan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb><C:/Users/matan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Users/matan/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb><C:/Users/matan/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/matan/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/matan/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/m
+atan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/U
+sers/matan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
+C:/Users/matan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
+fb><C:/Users/matan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on acl2021.pdf (11 pages, 639939 bytes).
+PDF statistics:
+ 252 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 51753 words of extra memory for PDF output out of 61914 (max. 10000000)
+

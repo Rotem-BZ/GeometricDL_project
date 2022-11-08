@@ -1,0 +1,51 @@
+\begin{thebibliography}{7}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Pro()}]{Prolific}
+
+\newblock \href {https://www.prolific.co/} {Prolific}.
+
+\bibitem[{wik()}]{wikipedia}
+
+\newblock \href {https://en.wikipedia.org/wiki/Codenames_(board_game)}
+  {Wikipedia - codenames}.
+
+\bibitem[{Bard et~al.(2020)Bard, Foerster, Chandar, Burch, Lanctot, Song,
+  Parisotto, Dumoulin, Moitra, Hughes, Dunning, Mourad, Larochelle, Bellemare,
+  and Bowling}]{hanabi_challenge}
+Nolan Bard, Jakob~N. Foerster, Sarath Chandar, Neil Burch, Marc Lanctot,
+  H.~Francis Song, Emilio Parisotto, Vincent Dumoulin, Subhodeep Moitra, Edward
+  Hughes, Iain Dunning, Shibl Mourad, Hugo Larochelle, Marc~G. Bellemare, and
+  Michael Bowling. 2020.
+\newblock \href {https://doi.org/https://doi.org/10.1016/j.artint.2019.103216}
+  {The hanabi challenge: A new frontier for ai research}.
+\newblock \emph{Artificial Intelligence}, 280:103216.
+
+\bibitem[{Kim et~al.(2019)Kim, Ruzmaykin, Truong, and
+  Summerville}]{cooperation_and_codenames}
+Andrew Kim, Maxim Ruzmaykin, Aaron Truong, and Adam Summerville. 2019.
+\newblock \href {https://ojs.aaai.org/index.php/AIIDE/article/view/5239}
+  {Cooperation and codenames: Understanding natural language processing via
+  codenames}.
+\newblock \emph{Proceedings of the AAAI Conference on Artificial Intelligence
+  and Interactive Digital Entertainment}, 15(1):160--166.
+
+\bibitem[{Koyyalagunta et~al.(2021)Koyyalagunta, Sun, Draelos, and
+  Rudin}]{Divya}
+Divya Koyyalagunta, Anna Sun, Rachel~Lea Draelos, and Cynthia Rudin. 2021.
+\newblock Playing codenames with language graphs and word embeddings.
+\newblock \emph{Journal of Artificial Intelligence Research}, 71:319--346.
+
+\bibitem[{Ostrovski et~al.(2021)Ostrovski, Castro, and Dabney}]{passive-RL}
+Georg Ostrovski, Pablo~Samuel Castro, and Will Dabney. 2021.
+\newblock \href {https://doi.org/10.48550/ARXIV.2110.14020} {The difficulty of
+  passive learning in deep reinforcement learning}.
+
+\bibitem[{Swaminathan and Joachims(2015)}]{CRM}
+Adith Swaminathan and Thorsten Joachims. 2015.
+\newblock Counterfactual risk minimization: Learning from logged bandit
+  feedback.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  814--823. PMLR.
+
+\end{thebibliography}
