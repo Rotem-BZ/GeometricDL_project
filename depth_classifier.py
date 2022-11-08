@@ -18,7 +18,7 @@ from imblearn.over_sampling import RandomOverSampler
 from tqdm import tqdm
 import seaborn as sns
 
-TENSORS_FOLDER = 'saved_data'
+TENSORS_FOLDER = '/home/niv.ko/Geometric/saved_data'
 # FEATURES_PATH = join(DATA_FOLDER, 'extracted_features.pt')
 # LABELS_PATH = join(DATA_FOLDER, 'optimal_depths.pt')
 TRAINED_NETWORK_PATH = 'saved_metrics/lightning_logs/version_0/checkpoints/epoch=2-step=267.ckpt'
@@ -47,8 +47,8 @@ def train_depth_classifier(depth, combined_features, set_name):
     X_train, y_train = RandomUnderSampler().fit_resample(X_train, y_train)
     candidate_models = {
         'decision_tree': lambda: tree.DecisionTreeClassifier(),
-        'boosted_tree': lambda: AdaBoostClassifier(n_estimators=500),
-        'random_forest': lambda: RandomForestClassifier(500),
+        'boosted_tree': lambda: AdaBoostClassifier(n_estimators=200),
+        'random_forest': lambda: RandomForestClassifier(200),
         'MLP': lambda: MLPClassifier(hidden_layer_sizes=(50, 50, 50, 50), random_state=42, max_iter=3000)
     }
     if len(candidate_models) > 1:
@@ -86,19 +86,19 @@ def train_depth_classifier(depth, combined_features, set_name):
     test_score = clf.score(X_test, y_test)
     plt.hist(clf.predict(X_test))
     plt.title('preds hist')
-    plt.savefig(join(TENSORS_FOLDER, 'preds_hist.png'))
-    plt.clf()
-    plt.hist(y_test)
-    plt.title('labels hist')
-    plt.savefig(join(TENSORS_FOLDER, 'labels_hist.png'))
+    plt.savefig(join(TENSORS_FOLDER, f'preds_hist_{set_name}_{depth}.png'))
+    # plt.clf()
+    # plt.hist(y_test)
+    # plt.title('labels hist')
+    # plt.savefig(join(TENSORS_FOLDER, 'labels_hist.png'))
     print(f"training score:\t{train_score}\ntest score:\t{test_score}")
     # joblib.dump(clf, DEPTH_MODEL_PATH)
     # print(f"saved trained model to path:\t{DEPTH_MODEL_PATH}")
     # joblib.load(DEPTH_MODEL_PATH)
 
 
-def analyze_centrality_measures(depth, experiment_type: str):
-    X, y = load_data(depth, combined=False, set_name='test')
+def analyze_centrality_measures(depth, experiment_type: str, set_name):
+    X, y = load_data(depth, combined=False, set_name=set_name)
 
     if experiment_type == 'decision_tree':
         clf = tree.DecisionTreeClassifier()
@@ -142,15 +142,21 @@ def analyze_centrality_measures(depth, experiment_type: str):
     elif experiment_type == 'bar_plot':
         plt.style.use("seaborn")
         bins = np.bincount(y)
-        plt.bar([f"depth_{i}" for i in range(1, depth+1)], bins)
+        plt.bar([f"depth_{i}" for i in range(1, depth + 1)], bins)
         fig = plt.gcf()
         fig.suptitle("Optimal Depth Histogram", fontsize=20)
         # plt.title("Optimal Depth Histogram")
         plt.show()
+        plt.savefig(join(TENSORS_FOLDER, f'bar_plot_{set_name}.png'))
     else:
         raise ValueError(f"illegal clf_type {experiment_type}")
 
 
 if __name__ == '__main__':
-    analyze_centrality_measures(depth=7, experiment_type='bar_plot')
-    # train_depth_classifier(7, combined_features=False, set_name='train')
+    # analyze_centrality_measures(depth=7, experiment_type='bar_plot', set_name='val')
+    combined = True
+    for depth in [3, 5, 7]:
+        for set_name in ['train', 'val', 'test']:
+            print(f'start depth {depth} set {set_name} combined {combined}')
+            train_depth_classifier(depth, combined_features=combined, set_name=set_name)
+

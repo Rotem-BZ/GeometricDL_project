@@ -1,5 +1,4 @@
 from pathlib import Path
-
 import torch
 import pickle
 # import joblib
@@ -119,13 +118,13 @@ def create_data(network: OurGNN, data_module: OurDataModule, combined, set_name)
 
 
 def main():
-    max_depth = None
+    max_depth = 7
     batch_size = 1024
-    epochs = 150
+    epochs = 1
     neighbor_limit = -1
     embed_dim = 256
 
-    debug_mode = True
+    debug_mode = False
     device = {'accelerator': 'cpu'}
     # device = {'accelerator': 'gpu', 'devices': [1]}
     data_path = '/data/user-data/niv.ko/networks'
@@ -137,8 +136,8 @@ def main():
         wandb_logger = WandbLogger(project="geometric_DL", log_model="all", name=f'depth_{max_depth}_epochs_{epochs}')
 
     cent_path = '/home/niv.ko/gnn_depth/measures/cent_data.csv'
-    # data_module = OurDataModule(max_depth, batch_size, neighbor_limit, data_path, device=device, centrality_path=cent_path)
-    # data_module.setup()
+    data_module = OurDataModule(max_depth, batch_size, neighbor_limit, data_path, device=device, centrality_path=cent_path)
+    data_module.setup()
 
     ###########################################################################
     # train model
@@ -146,21 +145,21 @@ def main():
     callbacks.append(ModelCheckpoint(monitor="val_epoch_minimal_loss", mode="min"))
     callbacks.append(LearningRateMonitor(logging_interval='epoch'))
     callbacks.append(EarlyStopping(monitor="val_epoch_minimal_loss", mode="min", patience=20))
-    # model = OurGNN(max_depth, data_module.data.x.shape[1], embed_dim, data_module.num_classes)
-    # trainer = pl.Trainer(logger=wandb_logger, max_epochs=epochs, **device, callbacks=callbacks,
-    #                      check_val_every_n_epoch=2)
+    model = OurGNN(max_depth, data_module.data.x.shape[1], embed_dim, data_module.num_classes)
+    trainer = pl.Trainer(logger=wandb_logger, max_epochs=epochs, **device, callbacks=callbacks,
+                         check_val_every_n_epoch=2)
     # trainer.fit(model, data_module)
-    # trainer.test(model, data_module)
+    trainer.test(model, data_module)
     ###########################################################################
 
-    # ###########################################################################
+    ###########################################################################
     # create optimal-depth data
-    # model = OurGNN(max_depth, data_module.data.x.shape[1], embed_dim, data_module.num_classes)
-    # model.load_from_checkpoint('checkpoints/epoch=0-step=89-v1.ckpt')
-    # model = OurGNN.load_from_checkpoint('checkpoints/epoch=0-step=89-v1.ckpt')
+    model = OurGNN(max_depth, data_module.data.x.shape[1], embed_dim, data_module.num_classes)
+    model.load_from_checkpoint('checkpoints/epoch=0-step=89-v1.ckpt')
+    model = OurGNN.load_from_checkpoint('checkpoints/epoch=0-step=89-v1.ckpt')
     # reference can be retrieved in artifacts panel
     # "VERSION" can be a version (ex: "v2") or an alias ("latest or "best")
-    checkpoint_reference = 'niv-ko/geometric_DL/model-d33mm2v9:v16'
+    checkpoint_reference = 'niv-ko/geometric_DL/model-1t7i43ky:v17'
 
     # download checkpoint locally (if not already cached)
     wandb_logger = WandbLogger(project="geometric_DL", log_model=False)
