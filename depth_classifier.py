@@ -124,11 +124,6 @@ def analyze_centrality_measures(depth, experiment_type: str, set_name):
         plt.xlabel("Feature number")
         plt.ylabel(r"Univariate score ($-Log(p_{value})$)")
         plt.savefig()
-    elif experiment_type == 'feature importance':
-        """
-        use the in-built feature importance function of trees in sklearn
-        """
-        pass
     elif experiment_type == 'correlation heatmap':
         """
         plot a heatmap with correlations between variables and the label

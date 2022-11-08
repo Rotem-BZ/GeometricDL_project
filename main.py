@@ -10,7 +10,6 @@ from tqdm import tqdm
 import pandas as pd
 import torch.nn.functional as F
 from torch_geometric.loader import NeighborLoader
-from torch_geometric.nn import MessagePassing, SAGEConv
 from ogb.nodeproppred import Evaluator, PygNodePropPredDataset
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
@@ -27,7 +26,6 @@ DEPTH_MODEL_PATH = 'depth_model.pkl'
 
 class OurDataModule(pl.LightningDataModule):
     def __init__(self, max_depth, batch_size, neighbor_limit, path, centrality_path, device):
-        # TODO: implement for cuda
         super(OurDataModule, self).__init__()
         device = device['accelerator']
         self.max_depth = max_depth
@@ -82,7 +80,7 @@ class OurDataModule(pl.LightningDataModule):
                               batch_size=self.batch_size, num_neighbors=[self.neighbor_limit] * self.max_depth)
 
 
-def create_data(network: OurGNN, data_module: OurDataModule, combined, set_name):
+def create_depth_data(network: OurGNN, data_module: OurDataModule, combined, set_name):
     X = []
     Y = []
 
@@ -152,11 +150,6 @@ def main():
     trainer.test(model, data_module)
     ###########################################################################
 
-    ###########################################################################
-    # create optimal-depth data
-    model = OurGNN(max_depth, data_module.data.x.shape[1], embed_dim, data_module.num_classes)
-    model.load_from_checkpoint('checkpoints/epoch=0-step=89-v1.ckpt')
-    model = OurGNN.load_from_checkpoint('checkpoints/epoch=0-step=89-v1.ckpt')
     # reference can be retrieved in artifacts panel
     # "VERSION" can be a version (ex: "v2") or an alias ("latest or "best")
     checkpoint_reference = 'niv-ko/geometric_DL/model-1t7i43ky:v17'
@@ -172,16 +165,8 @@ def main():
     trainer = pl.Trainer(logger=wandb_logger, max_epochs=epochs, **device, callbacks=callbacks,
                          check_val_every_n_epoch=2)
     data_module = OurDataModule(model.max_depth, batch_size, neighbor_limit, data_path, cent_path, device)
-    # trainer.test(model, data_module)
-    print('hi')
     for combined in (True, False):
-        create_data(model, data_module, combined=combined, set_name='train')
-    # ###########################################################################
-    #
-    # ###########################################################################
-    # # train decision tree for optimal depth
-    # train_depth_regressor()     # note: doesn't require the original data
-    # ###########################################################################
+        create_depth_data(model, data_module, combined=combined, set_name='train')
 
 
 if __name__ == '__main__':
