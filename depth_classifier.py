@@ -11,16 +11,19 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split, cross_val_score
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 from pprint import pprint
 from imblearn.under_sampling import RandomUnderSampler
 from imblearn.over_sampling import RandomOverSampler
 from tqdm import tqdm
+import seaborn as sns
 
-TENSORS_FOLDER = '/home/niv.ko/Geometric/saved_data'
+TENSORS_FOLDER = 'saved_data'
 # FEATURES_PATH = join(DATA_FOLDER, 'extracted_features.pt')
 # LABELS_PATH = join(DATA_FOLDER, 'optimal_depths.pt')
 TRAINED_NETWORK_PATH = 'saved_metrics/lightning_logs/version_0/checkpoints/epoch=2-step=267.ckpt'
 DEPTH_MODEL_PATH = 'depth_model.pkl'
+FEATURE_NAMES = ['out_deg', 'in_deg', 'eigenvector', 'pagerank', 'katz', 'percolation', 'hubs', 'authorities']
 
 
 def load_data(depth, combined, set_name):
@@ -95,11 +98,12 @@ def train_depth_classifier(depth, combined_features, set_name):
 
 
 def analyze_centrality_measures(depth, experiment_type: str):
-    X, y = load_data(depth)
+    X, y = load_data(depth, combined=False, set_name='test')
+
     if experiment_type == 'decision_tree':
         clf = tree.DecisionTreeClassifier()
         clf.fit(X, y)
-        tree.plot_tree(clf)
+        tree.plot_tree(clf, max_depth=2, filled=True, rounded=True, fontsize=7, impurity=False, precision=9)
         plt.show()
     elif experiment_type == 'MLP_sharpe':
         """
@@ -129,11 +133,24 @@ def analyze_centrality_measures(depth, experiment_type: str):
         """
         plot a heatmap with correlations between variables and the label
         """
-        pass
+        df = pd.DataFrame(X, columns=FEATURE_NAMES)
+        df['label'] = y
+        corr = df.corr()
+        sns.heatmap(corr, xticklabels=corr.columns, yticklabels=corr.columns, annot=True)
+        plt.show()
+
+    elif experiment_type == 'bar_plot':
+        plt.style.use("seaborn")
+        bins = np.bincount(y)
+        plt.bar([f"depth_{i}" for i in range(1, depth+1)], bins)
+        fig = plt.gcf()
+        fig.suptitle("Optimal Depth Histogram", fontsize=20)
+        # plt.title("Optimal Depth Histogram")
+        plt.show()
     else:
         raise ValueError(f"illegal clf_type {experiment_type}")
 
 
 if __name__ == '__main__':
-    # analyze_centrality_measures('decision_tree')
-    train_depth_classifier(7, combined_features=False, set_name='train')
+    analyze_centrality_measures(depth=7, experiment_type='bar_plot')
+    # train_depth_classifier(7, combined_features=False, set_name='train')
