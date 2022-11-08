@@ -83,25 +83,33 @@ class OurDataModule(pl.LightningDataModule):
                               batch_size=self.batch_size, num_neighbors=[self.neighbor_limit] * self.max_depth)
 
 
-def create_data(network: OurGNN, batch_size, neighbor_limit, data_path, cent_path, device):
+def create_data(network: OurGNN, data_module: OurDataModule, combined, set_name):
     X = []
     Y = []
 
-    data_module = OurDataModule(network.max_depth, batch_size, neighbor_limit, data_path, cent_path, device)
     data_module.setup()
-    loader = data_module.depth_dataloader()
+    # loader = data_module.depth_dataloader() if not val else data_module.val_dataloader()
+    loader = {'train': data_module.train_dataloader(),
+              'val': data_module.val_dataloader(),
+              'test': data_module.test_dataloader()}[set_name]
 
     with torch.inference_mode():
         for batch in tqdm(loader):
             features = batch.extracted_features[:batch.batch_size]  # should be (num_nodes, num_features)
+            if combined:
+                init_features = batch.x[:batch.batch_size]
+                features = torch.cat([features, init_features], dim=1)
             targets = network.optimal_depth(batch)
             X.append(features)
             Y += targets.tolist()
 
     X = torch.vstack(X)
     Y = torch.tensor(Y)
-    features_path = join(DATA_FOLDER, f'{network.max_depth}_layers_features.pt')
-    labels_path = join(DATA_FOLDER, f'{network.max_depth}_layers_optimal_depths.pt')
+    set_suffix = {'train': '_train',
+                  'val': '_val',
+                  'test': ''}[set_name]
+    features_path = join(DATA_FOLDER, f'{network.max_depth}_layers_{"combined_" if combined else ""}features{set_suffix}.pt')
+    labels_path = join(DATA_FOLDER, f'{network.max_depth}_layers_optimal_depths{set_suffix}.pt')
     if not isdir(DATA_FOLDER):
         os.mkdir(DATA_FOLDER)
     with open(features_path, 'wb') as file:
@@ -155,14 +163,20 @@ def main():
     checkpoint_reference = 'niv-ko/geometric_DL/model-d33mm2v9:v16'
 
     # download checkpoint locally (if not already cached)
-    run = wandb.init(project="geometric_DL")
+    wandb_logger = WandbLogger(project="geometric_DL", log_model=False)
+    run = wandb_logger.experiment
     artifact = run.use_artifact(checkpoint_reference, type="model")
     artifact_dir = artifact.download()
 
     # load checkpoint
-    model = OurGNN.load_from_checkpoint(Path(artifact_dir) / "model.ckpt")
+    model: OurGNN = OurGNN.load_from_checkpoint(Path(artifact_dir) / "model.ckpt")
+    trainer = pl.Trainer(logger=wandb_logger, max_epochs=epochs, **device, callbacks=callbacks,
+                         check_val_every_n_epoch=2)
+    data_module = OurDataModule(model.max_depth, batch_size, neighbor_limit, data_path, cent_path, device)
+    # trainer.test(model, data_module)
     print('hi')
-    create_data(model, batch_size, neighbor_limit, data_path, cent_path, device)
+    for combined in (True, False):
+        create_data(model, data_module, combined=combined, set_name='train')
     # ###########################################################################
     #
     # ###########################################################################
